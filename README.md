@@ -44,6 +44,8 @@ figures/
 requirements.txt
 LICENSE
 NOTICE.md
+README.md
+```
 
 ## Installation
 
@@ -52,4 +54,31 @@ The final analysis used Python 3.12.7.
 ```bash
 python3.12 -m venv .venv
 source .venv/bin/activate
+python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+```
+
+## Quick validation
+
+```bash
+python src/structure_only_adaptive_plus.py self-test
+```
+
+## Reproducing the retained analysis
+
+```bash
+python src/analyse_worst_class_route.py \
+    --raw results/confirmation/structure_only_raw.csv \
+    --output-dir results/confirmation/worst_class_results
+```
+
+## Regenerating the thesis figures
+
+```bash
+python src/make_thesis_figures.py \
+    --results-dir results/confirmation \
+    --output-dir figures
+```
+
+The retained raw outputs allow the analysis to be reproduced without
+rerunning the complete simulation.
