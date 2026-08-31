@@ -80,5 +80,7 @@ python src/make_thesis_figures.py \
     --output-dir figures
 ```
 
-The retained raw outputs allow the analysis to be reproduced without
-rerunning the complete simulation.
+The retained raw and summarised outputs support reanalysis of the reported
+results without rerunning the complete simulation. Small numerical
+differences may arise across software environments, particularly in
+cross-validation summaries.
