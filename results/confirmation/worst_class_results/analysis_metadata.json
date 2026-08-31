@@ -1,0 +1,21 @@
+{
+  "source_file": "../structure_only_raw.csv",
+  "n_rows": 2500,
+  "n_scenarios": 50,
+  "n_repetitions": 10,
+  "lambda_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "primary_validity_outcome": "worst_class_coverage",
+  "efficiency_outcome": "mean_set_size",
+  "primary_diagnostic": "G_Aplus",
+  "appendix_outcome": "marginal coverage",
+  "nominal_coverage": 0.9,
+  "bootstrap_unit": "scenario_id",
+  "bootstrap_draws": 5000,
+  "analysis_seed": 2026
+}
